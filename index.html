@@ -4,6 +4,14 @@
     <style>
         body {
             margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Full viewport height */
         }
         h1{
             text-align: center;
@@ -31,15 +39,28 @@
             background-color: #e61010;
             color: white;
         }
+        footer{
+            text-align: center;
+            padding: 10px;
+            background-color: #bdbdbd;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <h1>Struktur Dewan Ambalan</h1>
-    <h2>Ambalan SAMRATULANGI & WALANDA MARAMIS</h2>
-    <nav class="Periode">
-       <ul>
-        <li><a href="2425.html">Dewan Ambalan Periode 24/25</a></li>
-        <li><a href="2526.html">Dewan Ambalan Periuode 25/26</a></li>
-       </ul>
-    </nav>
+    <div class="content">
+        <h1>Struktur Dewan Ambalan</h1>
+        <h2>Ambalan SAMRATULANGI & WALANDA MARAMIS</h2>
+        <nav class="Periode">
+        <ul>
+            <li><a href="2425.html">Dewan Ambalan Periode 24/25</a></li>
+            <li><a href="2526.html">Dewan Ambalan Periuode 25/26</a></li>
+        </ul>
+        </nav>
+    </div>
+    <footer>
+        &copy; Dewan Ambalan SAMRATULANGI & WALANDA MARAMIS
+    </footer>
 </body>

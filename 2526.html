@@ -2,39 +2,54 @@
 
 <head>
     <title>Struktur Dewan Ambalan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <div class="judul" >
-        <h1>Struktur Dewan Ambalan</h1>
-    </div>
-    <div class="Periode"> 
-        <p>Dewan Ambalan 2025/2026 Periode 1 Tahun:</p>
-    </div>"
-    
-    <ul>
-            <li><b>Pradana Putra</b>: Muhamad Rinaldi Alghifari Saba</li>
-            <li><b>Pradana Putri </b>: Eukharistia Anjani Pesik</li>
-            <li><b>Pemangku Adat Putra</b>: Gerald Juniord Taroreh</li>
-            <li><b>Pemangku Adat Putri</b>: Jeniver Claudia Teleng</li>
-            <li><b>Kerani Putra </b>: Leon Francesco Kolamban</li>
-            <li><b>Kerani Putri</b>: Ayu Welmina Pala</li>
-            <li><b>Juru Uang Putra</b>: Muhammad Vikram Masira</li>
-            <li><b>Juru Uang Putri</b>: Florina Felicia Lagonda</li>
-    </ul>
-
-    <nav class="Isak">
-        <ul>
-            <li>
-                <a href="index.html">home</a>
-            </li>
+    <div class="content">
+        <div class="judul" >
+            <h1>Struktur Dewan Ambalan</h1>
+        </div>
+        <div class="Periode"> 
+            <p>Dewan Ambalan 2025/2026 Periode 1 Tahun:</p>
+        </div>
+        
+        <ul class="dewamAmbalan">
+                <li><b>Pradana Putra</b>: <a href="">Muhamad Rinaldi Alghifari Saba</a></li>
+                <li><b>Pradana Putri </b>: <a href="">Eukharistia Anjani Pesik</a></li>
+                <li><b>Pemangku Adat Putra</b>: <a href="">Gerald Juniord Taroreh</a></li>
+                <li><b>Pemangku Adat Putri</b>: <a href="">Jeniver Claudia Teleng</a></li>
+                <li><b>Kerani Putra </b>: <a href="">Leon Francesco Kolamban</a></li>
+                <li><b>Kerani Putri</b>: <a href="">Ayu Welmina Pala</a></li>
+                <li><b>Juru Uang Putra</b>: <a href="">Muhammad Vikram Masira</a></li>
+                <li><b>Juru Uang Putri</b>: <a href="">Florina Felicia Lagonda</a></li>
         </ul>
-    </nav>
+
+        <nav class="Isak">
+            <ul>
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+   <footer class="footer">
+        &copy; Dewan Ambalan SAMRATULANGI & WALANDA MARAMIS
+    </footer>
 </body>
 
  <style>
  body{
-    margin : 0;}
+    margin : 0;
+    display: flex;
+    flex-direction: column;}
+    
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
 
 .judul{
     background-color: brown;
@@ -63,6 +78,7 @@ ul{
     list-style : none;
     display: table;
     margin-top: 0;
+    border-spacing: 0 12px;
 }
 
 li{
@@ -85,4 +101,29 @@ b{
 .Isak a:hover{
     background-color: #e61010;
     color: white;}
+
+.dewamAmbalan a{
+    text-decoration: none;
+    color: rgb(197, 0, 0);
+    font-weight: bold;
+    
+ }
+.dewamAmbalan a:hover{
+    color: black;
+    background-color: #e61010;
+    padding: 5px;
+    border-radius: 5px;
+}
+.dewamAmbalan li {
+    margin-bottom: 12px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #bdbdbd;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
  </style>
